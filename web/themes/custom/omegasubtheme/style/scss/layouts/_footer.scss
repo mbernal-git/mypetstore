@@ -1,0 +1,30 @@
+#footer-outer-wrapper {
+  @extend %duk-island--tertiary;
+
+  > .footer-layout {
+    @extend %duk-island;
+  }
+  
+  #logo {
+    margin: 0 auto;
+    height: 40px;
+    width: 70px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+  li {
+    padding: .2em;
+  }
+}

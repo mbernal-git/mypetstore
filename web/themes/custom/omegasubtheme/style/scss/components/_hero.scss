@@ -1,0 +1,55 @@
+.hero {
+  position: relative;
+ 
+  &__image {
+    position: relative;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__heading {
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4.5em;
+    z-index: 2;
+    margin: auto;
+  }
+
+  &__cta {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    padding: 1em 1.7em;
+    @extend .button--primary;
+    z-index: 2;
+  }
+
+  &__cta:hover {
+      cursor: pointer;
+  }
+
+  @media screen and (max-width: 480px) {
+
+    &__heading {
+      font-size: 1.3em;
+      padding: 1em;
+    }
+
+    &__cta {
+      left: 50%;
+      top: 85%;
+      transform: translate(-50%, -85%);
+      padding: .1em .75em;
+    }
+
+  }
+
+}

@@ -1,0 +1,38 @@
+.pet-store-friends {
+  width: 50%;
+  float: left;
+  height: 100%;
+
+
+  img {
+    height: auto;
+    
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    float: none;
+  }
+}
+
+.latest-article-block {
+  height: 328px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: auto;
+
+    h3 {
+      line-height: 1;
+      font-size: 1em;
+    }
+
+    p {
+      line-height: 1;
+    }
+
+  }
+
+}
